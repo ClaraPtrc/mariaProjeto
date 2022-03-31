@@ -1,0 +1,31 @@
+﻿<Window x:Class="projeto1clara.cadastrar_cli"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projeto1clara"
+        mc:Ignorable="d"
+        Title="cadastrar_cli" Height="700" Width="700">
+    <Grid x:Name="FrmCadastrar_cli" AutomationProperties.Name="Cadastro ">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFE87BD6" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="CADASTRO" VerticalAlignment="Top" FontFamily="Georgia" Width="700" Height="47" FontSize="48" Background="#FF406688" TextAlignment="Center" Grid.Column="1"/>
+        <Label Grid.Column="1" Content="Nome :" HorizontalAlignment="Left" Margin="115,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,1.203" Background="#FF004B7B" FontFamily="Georgia" FontSize="18" Height="30" Width="68"/>
+        <Label Grid.Column="1" Content="Senha :" HorizontalAlignment="Left" Margin="115,292,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,1.203" Background="#FF004B7B" FontFamily="Georgia" FontSize="18" Height="29" Width="68"/>
+        <Label Grid.Column="1" Content="confirmar senha:" HorizontalAlignment="Left" Margin="33,354,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,1.203" Background="#FF004B7B" FontFamily="Georgia" FontSize="18" Height="29" Width="150"/>
+        <TextBox x:Name="txt_nome" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="222,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Height="30" TextChanged="TextBox_TextChanged"/>
+        <PasswordBox x:Name="pw_usu" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="220,292,0,0" VerticalAlignment="Top" Width="184" Height="29"/>
+        <PasswordBox x:Name="pw_usu2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="222,354,0,0" VerticalAlignment="Top" Width="184" Height="29"/>
+        <Button x:Name="bt_cadastrar2" Grid.Column="1" Content="Cadastrar" HorizontalAlignment="Left" Margin="260,492,0,0" VerticalAlignment="Top" Width="108" Height="44" FontFamily="Impact" Background="#FF6AA8AF" BorderBrush="#FF251212" Foreground="#FF070808" FontWeight="Normal" FontStyle="Normal" FontSize="16" Cursor="Hand" Click="bt_cadastrar_Click"/>
+
+    </Grid>
+</Window>

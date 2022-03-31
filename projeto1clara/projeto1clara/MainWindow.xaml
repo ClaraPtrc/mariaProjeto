@@ -1,0 +1,31 @@
+﻿<Window x:Class="projeto1clara.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projeto1clara"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="880">
+    <Grid x:Name="login" Margin="0,-48,0,-31" Background="#FFC88BBE">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="366*"/>
+            <ColumnDefinition Width="88*"/>
+            <ColumnDefinition Width="88*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="2" Content=" Acessar" HorizontalAlignment="Left" Margin="124,472,0,0" VerticalAlignment="Top" Width="86" Height="45" FontFamily="Impact" Background="#FF6AA8AF" BorderBrush="#FF251212" Foreground="#FF070808" FontWeight="Normal" FontStyle="Normal" FontSize="16" Cursor="Hand" RenderTransformOrigin="-1.052,2.625" Click="Button_Click_1"/>
+        <TextBox x:Name="txt_nomeUsu" Grid.Column="2" HorizontalAlignment="Left" Margin="118,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" Height="42"/>
+        <PasswordBox x:Name="txt_senhaUsu" Grid.Column="2" Margin="118,371,99,0" VerticalAlignment="Top" Height="39"/>
+        <Label Grid.Column="2" Content="Usuário :" HorizontalAlignment="Left" Margin="20,303,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,1.203" Background="#FF004B7B" FontFamily="Verdana" FontSize="18" Height="40" Width="86"/>
+        <Label Grid.Column="2" Content="Senha :" HorizontalAlignment="Left" Margin="20,369,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.02,0.315" Width="78" FontSize="18" Background="#FF004B7B" Height="41"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Acesso ao usúario" VerticalAlignment="Top" FontFamily="Georgia" Grid.ColumnSpan="5" Width="881" Height="69" FontSize="48" Background="#FF406688" TextAlignment="Center"/>
+        <Button x:Name="bt_cadastrar" Grid.Column="2" Content="Cadastrar - se" HorizontalAlignment="Left" Margin="60,658,0,0" VerticalAlignment="Top" Width="107" Height="44" FontFamily="Impact" Background="#FF6AA8AF" BorderBrush="#FF251212" Foreground="#FF070808" FontWeight="Normal" FontStyle="Normal" FontSize="16" Cursor="Hand" Click="bt_cadastrar_Click"/>
+        <TextBlock Grid.Column="2" Margin="60,576,25,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Linux Libertine G" FontSize="16" Height="38"><Run Text="Não tem cadastro ??"/><LineBreak/><Run Text=" Faça agora mesmo clicando aqui : "/></TextBlock>
+        <Button x:Name="bt_cancelarUsu" Grid.Column="3" Content="Cancelar" HorizontalAlignment="Left" Margin="44,665,0,0" VerticalAlignment="Top" Width="112" Height="45" FontFamily="Impact" Background="#FF6AA8AF" BorderBrush="#FF251212" Foreground="#FF070808" FontWeight="Normal" FontStyle="Normal" FontSize="16" RenderTransformOrigin="3.14,1.01" Grid.ColumnSpan="2" Cursor="Hand" Click="bt_cancelarUsu_Click"/>
+        <Label Content="___________________________________________________________________________________________________________________________________________________________________________-__" HorizontalAlignment="Left" Margin="19,491,0,0" VerticalAlignment="Top" Width="511" Grid.ColumnSpan="4" FontSize="24" Height="52"/>
+        <Image Grid.Column="2" HorizontalAlignment="Left" Height="145" Margin="195,74,0,0" VerticalAlignment="Top" Width="107" Source="/usuario.icon.png"/>
+
+    </Grid>
+</Window>
+ 
